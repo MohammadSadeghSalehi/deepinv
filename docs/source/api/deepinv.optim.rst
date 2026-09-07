@@ -205,3 +205,34 @@ Utils
    :nosignatures:
 
    deepinv.optim.utils.GaussianMixtureModel
+
+
+Bilevel learning
+----------------
+Learn prior parameters :math:`\theta` by minimising :math:`g(x^\star(\theta))` over the
+reconstructions :math:`x^\star(\theta)` of a lower-level problem, with the lower-level
+accuracy chosen adaptively and certified at each step.
+
+.. autosummary::
+   :toctree: stubs
+   :template: myclass_template.rst
+   :nosignatures:
+
+   deepinv.optim.bilevel.MAID
+   deepinv.optim.bilevel.MAIDConfig
+   deepinv.optim.bilevel.HypergradientOracle
+   deepinv.optim.bilevel.LowerLevelState
+   deepinv.optim.bilevel.HypergradientState
+   deepinv.optim.bilevel.SmoothHypergradientOracle
+   deepinv.optim.bilevel.QuadraticBilevelLS
+
+.. autosummary::
+   :toctree: stubs
+   :template: myfunc_template.rst
+   :nosignatures:
+
+   deepinv.optim.bilevel.accelerated_maid_config
+   deepinv.optim.bilevel.strong_convexity_distance_bound
+   deepinv.optim.bilevel.hypergradient_error_bound
+   deepinv.optim.bilevel.inexact_gradient
+   deepinv.optim.bilevel.inexact_gradient_from_oracle

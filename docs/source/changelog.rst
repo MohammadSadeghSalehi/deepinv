@@ -8,6 +8,7 @@ Current
 
 New Features
 ^^^^^^^^^^^^
+- Add :class:`deepinv.optim.bilevel.MAID`, the Method of Adaptive Inexact Descent for bilevel learning of prior parameters, with the hypergradient oracle interface and a certified quadratic oracle (:gh:`PRNUM` by `Mohammad Sadegh Salehi`_)
 - Add distributed backward propagation and training for samples too large to fit on a single device (:gh:`1088` by `Benoît Malézieux`_)
 - Add :func:`deepinv.physics.TomographyWithAstra.from_astra_geometry` to build the operator directly from pre-created ``astra`` geometries (:gh:`1102` by `Margaret Duff`_)
 - Add downloadable pretrained weights to :class:`deepinv.models.FFDNet` (:gh:`1357` by `Vicky De Ridder`_)
@@ -702,6 +703,7 @@ Changed
 .. _Chaithya G R: https://github.com/chaithyagr
 .. _Alexander Skorikov: https://github.com/askorikov
 .. _Thibaut Modrzyk: https://github.com/Tmodrzyk
+.. _Mohammad Sadegh Salehi: https://github.com/MohammadSadeghSalehi
 .. _Avithal Lautman: https://github.com/avithal
 .. _Thomas Boulanger: https://github.com/LeRatonLaveurSolitaire
 .. _Tiberiu Sabau: https://github.com/tibisabau
